@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FD9AF094267DFF1100C42676 /* AbstractTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD9AF08A267DFF1100C42676 /* AbstractTableView.framework */; };
-		FD9AF099267DFF1100C42676 /* AbstractTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AF098267DFF1100C42676 /* AbstractTableViewTests.swift */; };
 		FD9AF09B267DFF1100C42676 /* AbstractTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = FD9AF08D267DFF1100C42676 /* AbstractTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD9AF0AB267E012B00C42676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AF0AA267E012B00C42676 /* AppDelegate.swift */; };
 		FD9AF0AD267E012B00C42676 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AF0AC267E012B00C42676 /* SceneDelegate.swift */; };
@@ -16,6 +15,10 @@
 		FD9AF0B2267E012B00C42676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9AF0B0267E012B00C42676 /* Main.storyboard */; };
 		FD9AF0B4267E012F00C42676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD9AF0B3267E012F00C42676 /* Assets.xcassets */; };
 		FD9AF0B7267E012F00C42676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9AF0B5267E012F00C42676 /* LaunchScreen.storyboard */; };
+		FD9AF0C0267E4C6700C42676 /* AbstractTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AF0BF267E4C6700C42676 /* AbstractTableViewController.swift */; };
+		FD9AF0C3267E51C100C42676 /* TableViewDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AF0C2267E51C100C42676 /* TableViewDataProtocol.swift */; };
+		FD9AF0C9267EB7AF00C42676 /* AbstractTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AF0C8267EB7AF00C42676 /* AbstractTableViewControllerTests.swift */; };
+		FD9AF0CD267FC39C00C42676 /* TableViewDataProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AF0CC267FC39C00C42676 /* TableViewDataProtocolTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +36,6 @@
 		FD9AF08D267DFF1100C42676 /* AbstractTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractTableView.h; sourceTree = "<group>"; };
 		FD9AF08E267DFF1100C42676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD9AF093267DFF1100C42676 /* AbstractTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbstractTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD9AF098267DFF1100C42676 /* AbstractTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTableViewTests.swift; sourceTree = "<group>"; };
 		FD9AF09A267DFF1100C42676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD9AF0A8267E012B00C42676 /* AbstractTableViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbstractTableViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD9AF0AA267E012B00C42676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,10 @@
 		FD9AF0B3267E012F00C42676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD9AF0B6267E012F00C42676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD9AF0B8267E012F00C42676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD9AF0BF267E4C6700C42676 /* AbstractTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTableViewController.swift; sourceTree = "<group>"; };
+		FD9AF0C2267E51C100C42676 /* TableViewDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataProtocol.swift; sourceTree = "<group>"; };
+		FD9AF0C8267EB7AF00C42676 /* AbstractTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTableViewControllerTests.swift; sourceTree = "<group>"; };
+		FD9AF0CC267FC39C00C42676 /* TableViewDataProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataProtocolTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				FD9AF08D267DFF1100C42676 /* AbstractTableView.h */,
+				FD9AF0C1267E514600C42676 /* Model */,
+				FD9AF0BC267E08C900C42676 /* Controller */,
 				FD9AF08E267DFF1100C42676 /* Info.plist */,
 			);
 			path = AbstractTableView;
@@ -103,7 +111,8 @@
 		FD9AF097267DFF1100C42676 /* AbstractTableViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				FD9AF098267DFF1100C42676 /* AbstractTableViewTests.swift */,
+				FD9AF0C8267EB7AF00C42676 /* AbstractTableViewControllerTests.swift */,
+				FD9AF0CC267FC39C00C42676 /* TableViewDataProtocolTests.swift */,
 				FD9AF09A267DFF1100C42676 /* Info.plist */,
 			);
 			path = AbstractTableViewTests;
@@ -121,6 +130,22 @@
 				FD9AF0B8267E012F00C42676 /* Info.plist */,
 			);
 			path = AbstractTableViewExample;
+			sourceTree = "<group>";
+		};
+		FD9AF0BC267E08C900C42676 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD9AF0BF267E4C6700C42676 /* AbstractTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FD9AF0C1267E514600C42676 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD9AF0C2267E51C100C42676 /* TableViewDataProtocol.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +226,7 @@
 				TargetAttributes = {
 					FD9AF089267DFF1100C42676 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					FD9AF092267DFF1100C42676 = {
 						CreatedOnToolsVersion = 12.5;
@@ -262,6 +288,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD9AF0C0267E4C6700C42676 /* AbstractTableViewController.swift in Sources */,
+				FD9AF0C3267E51C100C42676 /* TableViewDataProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD9AF099267DFF1100C42676 /* AbstractTableViewTests.swift in Sources */,
+				FD9AF0CD267FC39C00C42676 /* TableViewDataProtocolTests.swift in Sources */,
+				FD9AF0C9267EB7AF00C42676 /* AbstractTableViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +467,7 @@
 		FD9AF09F267DFF1100C42676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C43Q2K9ZZB;
@@ -454,6 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = lakhwinder.AbstractTableView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +493,7 @@
 		FD9AF0A0267DFF1100C42676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = C43Q2K9ZZB;
@@ -486,6 +518,7 @@
 		FD9AF0A2267DFF1100C42676 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C43Q2K9ZZB;
 				INFOPLIST_FILE = AbstractTableViewTests/Info.plist;
@@ -504,6 +537,7 @@
 		FD9AF0A3267DFF1100C42676 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C43Q2K9ZZB;
 				INFOPLIST_FILE = AbstractTableViewTests/Info.plist;
