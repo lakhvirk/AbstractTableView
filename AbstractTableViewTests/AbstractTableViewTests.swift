@@ -33,7 +33,8 @@ class AbstractTableViewTests: XCTestCase {
     }
 
     func testInitWithCoder() {
-//        XCTAssertNil(AbstractTableView(coder: NSCoder()))
+        let coder = NSKeyedUnarchiver(forReadingWith: NSMutableData() as Data)
+        _ = AbstractTableView(coder: coder)
     }
 
     func testFillToSuperview() throws {

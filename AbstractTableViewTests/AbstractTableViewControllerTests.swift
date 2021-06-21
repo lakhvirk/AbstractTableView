@@ -34,11 +34,8 @@ class AbstractTableViewControllerTests: XCTestCase {
     }
 
     func testInitWithCoder() {
-//        XCTAssertNil(AbstractTableViewController(coder: NSCoder()))
-//        let cd = NSKeyedUnarchiver(forReadingWith: NSMutableData() as Data)
-//        let coder = NSKeyedArchiver(requiringSecureCoding: true)
-//        _ = AbstractTableViewController(coder: coder)
-
+        let coder = NSKeyedUnarchiver(forReadingWith: NSMutableData() as Data)
+        _ = AbstractTableViewController(coder: coder)
     }
 
     func testRowsRenderSuccessfully() throws {
