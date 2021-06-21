@@ -11,15 +11,12 @@ import XCTest
 class AbstractTableViewControllerTests: XCTestCase {
 
     var abstractTableViewController: AbstractTableViewController!
-    var rowsMockData: [AnyHashable]?
-    var sectionsMockData: [(header: AnyHashable, rows: [AnyHashable])]?
 
     override func setUp() {
         super.setUp()
-        abstractTableViewController = AbstractTableViewController()
-        abstractTableViewController.delegate = self
+        abstractTableViewController = AbstractTableViewController(style: .plain)
         abstractTableViewController.viewDidLoad()
-        
+        abstractTableViewController.removeExtraLines()
         XCTAssertTrue(abstractTableViewController.isViewLoaded)
     }
 
@@ -35,38 +32,44 @@ class AbstractTableViewControllerTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-    
+
+    func testInitWithCoder() {
+//        XCTAssertNil(AbstractTableViewController(coder: NSCoder()))
+//        let cd = NSKeyedUnarchiver(forReadingWith: NSMutableData() as Data)
+//        let coder = NSKeyedArchiver(requiringSecureCoding: true)
+//        _ = AbstractTableViewController(coder: coder)
+
+    }
+
     func testRowsRenderSuccessfully() throws {
         // Assert
-        rowsMockData = ["Row 1", "Row 2", "Row 3"]
-        XCTAssertEqual(abstractTableViewController.rows, rowsMockData, "Error in fetching rows from delegate")
+        let rowsMockData = ["Row 1", "Row 2", "Row 3"]
+        abstractTableViewController.setRows(rowsMockData)
+        let tableDataSource = abstractTableViewController.tableDataSource
 
-        XCTAssertEqual(abstractTableViewController.rows?.count ?? 0, abstractTableViewController.tableView.dataSource?.tableView(abstractTableViewController.tableView, numberOfRowsInSection: 0), "Error in table view number of rows in section")
+        let rowsEqual = tableDataSource.rows as! [String] == rowsMockData
+        XCTAssertTrue(rowsEqual, "Error in fetching rows from delegate")
+
+        XCTAssertEqual(tableDataSource.rows?.count ?? 0, abstractTableViewController.tableView.dataSource?.tableView(abstractTableViewController.tableView, numberOfRowsInSection: 0), "Error in table view number of rows in section")
+        
+        let cell = abstractTableViewController.tableView.cellForRow(at: IndexPath(row: 0, section: 0))
+        XCTAssertEqual(cell?.textLabel?.text, "Row 1", "Text label is not being rendered properly")
     }
 
     func testSectionsRenderSuccessfully() throws {
         // Assert
-        sectionsMockData = [
-            (header: "Header Title", rows: ["Row 1", "Row 2", "Row 3"]),
-            (header: "Header Title2", rows: ["Row 2 1", "Row 2 2", "Row 2 3"])
+        let sectionsMockData = [
+            (header: "Header Title", rows: ["My Row 1", "My Row 2", "My Row 3"]),
+            (header: "Header Title2", rows: ["My Row 2 1", "My Row 2 2", "My Row 2 3"])
         ]
+        abstractTableViewController.setSections(sectionsMockData)
+        let tableDataSource = abstractTableViewController.tableDataSource
 
-        let sectionsEql = abstractTableViewController.sections?.count == sectionsMockData?.count
+        let sectionsEql = tableDataSource.sections?.count == sectionsMockData.count
 
         XCTAssertTrue(sectionsEql, "Error in fetching sections from delegate")
-        XCTAssertEqual(abstractTableViewController.sections?.count ?? 0, abstractTableViewController.tableView.dataSource?.numberOfSections?(in: abstractTableViewController.tableView), "Error in table view number of sections")
-    }
-}
-
-extension AbstractTableViewControllerTests: TableViewDataProtocol {
-    var rows: [AnyHashable]? {
-        get {
-            return rowsMockData
-        }
-    }
-    var sections: [(header: AnyHashable, rows: [AnyHashable])]? {
-        get {
-            return sectionsMockData
-        }
+        XCTAssertEqual(tableDataSource.sections?.count ?? 1, abstractTableViewController.tableView.dataSource?.numberOfSections?(in: abstractTableViewController.tableView), "Error in table view number of sections")
+        
+        XCTAssertEqual(tableDataSource.sections?[0].rows.count ?? 0, abstractTableViewController.tableView.dataSource?.tableView(abstractTableViewController.tableView, numberOfRowsInSection: 0), "Error in table view number of sections")
     }
 }

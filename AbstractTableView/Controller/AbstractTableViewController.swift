@@ -7,98 +7,102 @@
 
 import UIKit
 
-public class AbstractTableViewController: UITableViewController {
+open class AbstractTableViewController: UITableViewController {
 
-    public var delegate: TableViewDataProtocol?
-
-    var rows: [AnyHashable]? {
-        return delegate?.rows
+    let tableCellID = "reuseIdentifier"
+    public var tableDataSource = TableViewDataSource()
+  
+    // MARK: init view
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
 
-    var sections: [(header: AnyHashable, rows: [AnyHashable])]? {
-        return delegate?.sections
+    required public override init(style: UITableView.Style) {
+        super.init(style: style)
     }
-    
-    public override func viewDidLoad() {
+
+    open override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-
-    // MARK: - Table view data source
-
-    public override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return sections?.count ?? 0
-    }
-
-    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return ((sections != nil) ? sections?[section].rows.count : rows?.count) ?? 0
-    }
-    
-    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        if sections != nil {
-            if let rows = sections?[indexPath.section].rows as? [String] {
-                cell.textLabel?.text = rows[indexPath.row] as String
-            }
-        } else {
-            if let rows = rows?[indexPath.row] as? [String] {
-                cell.textLabel?.text = rows[indexPath.row] as String
-            }
-        }
-
-        return cell
     }
 }
 
 //MARK: - Set up Table view
 
+// Check if comment comes up
 extension AbstractTableViewController {
     func setupTableView() {
-        // Register cell classes
-        tableView?.backgroundColor = UIColor.clear
-//        tableView.estimatedRowHeight = cellClass.cellHeight
-//        tableView?.rowHeight = UITableView.automaticDimension
-//        tableView.separatorStyle = .none
-//        tableView.separatorInset = .zero
-//        tableView.tableFooterView = UIView()
-//        if isNibUsed {
-//            tableView!.register(
-//                (UINib.init(
-//                    nibName: String(describing: cellClass),
-//                    bundle: nil)
-//                ),
-//                forCellReuseIdentifier: reuseId
-//            )
-//        } else {
-//            tableView!.register(
-//                self.cellClass,
-//                forCellReuseIdentifier: self.reuseId
-//            )
-//        }
-//        tableView!.showsVerticalScrollIndicator = false
-//        tableView!.alwaysBounceVertical = true
-//        let refreshControl = UIRefreshControl()
-//        refreshControl.addTarget(
-//            self,
-//            action: #selector(AbstractTableListControl.refresh),
-//            for: .valueChanged
-//        )
-//        if #available(iOS 10.0, *) {
-//            tableView.refreshControl = refreshControl
-//        } else {
-//            tableView.backgroundView = refreshControl
-//        }
-//        var inset = UIEdgeInsets.zero
-//        inset.bottom = bottomLayoutGuide.length
-//        tableView.contentInset = inset
-//        tableView?.backgroundView = self.customBackgroundView
+        tableView.register(cellClass, forCellReuseIdentifier: tableCellID)
+    }
+}
+
+//MARK: - Useful methods for child classes
+
+extension AbstractTableViewController {
+    open var cellClass: AnyClass {
+        return UITableViewCell.self
+    }
+
+    public func getTableViewCell(_ indexPath: IndexPath) -> UITableViewCell {
+        return tableView.dequeueReusableCell(withIdentifier: tableCellID, for: indexPath)
+    }
+
+    public func removeExtraLines() {
+        tableView.tableFooterView = UIView()
+    }
+}
+
+//MARK: - TableView data source methods
+
+/*
+ TableView data source methods
+ */
+extension AbstractTableViewController {
+    open override func numberOfSections(in tableView: UITableView) -> Int {
+        return tableDataSource.numberOfSections
+    }
+
+    open override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return tableDataSource.headerForSection(section)
+    }
+
+    open override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return tableDataSource.numberOfRowsInSection(section)
+    }
+    
+    open override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = getTableViewCell(indexPath)
+        cell.textLabel?.numberOfLines = 0
+        
+        if let rowTitle = tableDataSource.rowTitle(indexPath) {
+            cell.textLabel?.text = rowTitle
+        }
+        return cell
+    }
+}
+
+//MARK: - TableView delegate methods
+
+/*
+ TableView delegate methods
+ */
+extension AbstractTableViewController {
+    open override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        super.tableView(tableView, didSelectRowAt: indexPath)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+}
+
+//MARK: - TableView set data methods
+
+extension AbstractTableViewController {
+    public func setRows(_ rows: [Any]) {
+        tableDataSource.rows = rows
+        tableView.reloadData()
+    }
+    
+    public func setSections(_ sections: [(header: Any, rows: [Any])]) {
+        tableDataSource.sections = sections
+        tableView.reloadData()
     }
 }

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD09BED6268045A600C9CAF2 /* AbstractTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD09BED5268045A600C9CAF2 /* AbstractTableViewTests.swift */; };
+		FD0D4F72268008C000659F46 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D4F71268008C000659F46 /* TableViewController.swift */; };
+		FD0D4F752680152C00659F46 /* AbstractTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D4F742680152C00659F46 /* AbstractTableView.swift */; };
+		FD0D4F782680160000659F46 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D4F772680160000659F46 /* UIView.swift */; };
+		FD0D4F7A26801DA400659F46 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D4F7926801DA400659F46 /* TableViewDataSource.swift */; };
 		FD9AF094267DFF1100C42676 /* AbstractTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD9AF08A267DFF1100C42676 /* AbstractTableView.framework */; };
 		FD9AF09B267DFF1100C42676 /* AbstractTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = FD9AF08D267DFF1100C42676 /* AbstractTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD9AF0AB267E012B00C42676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AF0AA267E012B00C42676 /* AppDelegate.swift */; };
@@ -16,9 +21,8 @@
 		FD9AF0B4267E012F00C42676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD9AF0B3267E012F00C42676 /* Assets.xcassets */; };
 		FD9AF0B7267E012F00C42676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9AF0B5267E012F00C42676 /* LaunchScreen.storyboard */; };
 		FD9AF0C0267E4C6700C42676 /* AbstractTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AF0BF267E4C6700C42676 /* AbstractTableViewController.swift */; };
-		FD9AF0C3267E51C100C42676 /* TableViewDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AF0C2267E51C100C42676 /* TableViewDataProtocol.swift */; };
 		FD9AF0C9267EB7AF00C42676 /* AbstractTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AF0C8267EB7AF00C42676 /* AbstractTableViewControllerTests.swift */; };
-		FD9AF0CD267FC39C00C42676 /* TableViewDataProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AF0CC267FC39C00C42676 /* TableViewDataProtocolTests.swift */; };
+		FD9AF0CD267FC39C00C42676 /* TableViewDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AF0CC267FC39C00C42676 /* TableViewDataSourceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD09BED5268045A600C9CAF2 /* AbstractTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTableViewTests.swift; sourceTree = "<group>"; };
+		FD0D4F71268008C000659F46 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FD0D4F742680152C00659F46 /* AbstractTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTableView.swift; sourceTree = "<group>"; };
+		FD0D4F772680160000659F46 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		FD0D4F7926801DA400659F46 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		FD9AF08A267DFF1100C42676 /* AbstractTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AbstractTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD9AF08D267DFF1100C42676 /* AbstractTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractTableView.h; sourceTree = "<group>"; };
 		FD9AF08E267DFF1100C42676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,9 +55,8 @@
 		FD9AF0B6267E012F00C42676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD9AF0B8267E012F00C42676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD9AF0BF267E4C6700C42676 /* AbstractTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTableViewController.swift; sourceTree = "<group>"; };
-		FD9AF0C2267E51C100C42676 /* TableViewDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataProtocol.swift; sourceTree = "<group>"; };
 		FD9AF0C8267EB7AF00C42676 /* AbstractTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTableViewControllerTests.swift; sourceTree = "<group>"; };
-		FD9AF0CC267FC39C00C42676 /* TableViewDataProtocolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataProtocolTests.swift; sourceTree = "<group>"; };
+		FD9AF0CC267FC39C00C42676 /* TableViewDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSourceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD0D4F732680151100659F46 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD0D4F742680152C00659F46 /* AbstractTableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD0D4F76268015D100659F46 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FD0D4F772680160000659F46 /* UIView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		FD9AF080267DFF1100C42676 = {
 			isa = PBXGroup;
 			children = (
@@ -100,8 +124,10 @@
 		FD9AF08C267DFF1100C42676 /* AbstractTableView */ = {
 			isa = PBXGroup;
 			children = (
+				FD0D4F76268015D100659F46 /* Extension */,
 				FD9AF08D267DFF1100C42676 /* AbstractTableView.h */,
 				FD9AF0C1267E514600C42676 /* Model */,
+				FD0D4F732680151100659F46 /* View */,
 				FD9AF0BC267E08C900C42676 /* Controller */,
 				FD9AF08E267DFF1100C42676 /* Info.plist */,
 			);
@@ -112,7 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				FD9AF0C8267EB7AF00C42676 /* AbstractTableViewControllerTests.swift */,
-				FD9AF0CC267FC39C00C42676 /* TableViewDataProtocolTests.swift */,
+				FD09BED5268045A600C9CAF2 /* AbstractTableViewTests.swift */,
+				FD9AF0CC267FC39C00C42676 /* TableViewDataSourceTests.swift */,
 				FD9AF09A267DFF1100C42676 /* Info.plist */,
 			);
 			path = AbstractTableViewTests;
@@ -124,6 +151,7 @@
 				FD9AF0AA267E012B00C42676 /* AppDelegate.swift */,
 				FD9AF0AC267E012B00C42676 /* SceneDelegate.swift */,
 				FD9AF0AE267E012B00C42676 /* ViewController.swift */,
+				FD0D4F71268008C000659F46 /* TableViewController.swift */,
 				FD9AF0B0267E012B00C42676 /* Main.storyboard */,
 				FD9AF0B3267E012F00C42676 /* Assets.xcassets */,
 				FD9AF0B5267E012F00C42676 /* LaunchScreen.storyboard */,
@@ -143,7 +171,7 @@
 		FD9AF0C1267E514600C42676 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FD9AF0C2267E51C100C42676 /* TableViewDataProtocol.swift */,
+				FD0D4F7926801DA400659F46 /* TableViewDataSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,8 +316,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0D4F782680160000659F46 /* UIView.swift in Sources */,
+				FD0D4F7A26801DA400659F46 /* TableViewDataSource.swift in Sources */,
+				FD0D4F752680152C00659F46 /* AbstractTableView.swift in Sources */,
 				FD9AF0C0267E4C6700C42676 /* AbstractTableViewController.swift in Sources */,
-				FD9AF0C3267E51C100C42676 /* TableViewDataProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,8 +327,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD9AF0CD267FC39C00C42676 /* TableViewDataProtocolTests.swift in Sources */,
+				FD9AF0CD267FC39C00C42676 /* TableViewDataSourceTests.swift in Sources */,
 				FD9AF0C9267EB7AF00C42676 /* AbstractTableViewControllerTests.swift in Sources */,
+				FD09BED6268045A600C9CAF2 /* AbstractTableViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +340,7 @@
 				FD9AF0AF267E012B00C42676 /* ViewController.swift in Sources */,
 				FD9AF0AB267E012B00C42676 /* AppDelegate.swift in Sources */,
 				FD9AF0AD267E012B00C42676 /* SceneDelegate.swift in Sources */,
+				FD0D4F72268008C000659F46 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -452,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -476,6 +508,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AbstractTableView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -502,6 +535,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AbstractTableView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -561,7 +595,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C43Q2K9ZZB;
 				INFOPLIST_FILE = AbstractTableViewExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -581,7 +615,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C43Q2K9ZZB;
 				INFOPLIST_FILE = AbstractTableViewExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
