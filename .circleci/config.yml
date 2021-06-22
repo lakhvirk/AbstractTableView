@@ -4,9 +4,23 @@
 version: 2.1
 
 jobs:
+  build:
+
+    macos:
+      xcode: 12.5.1
+
+    steps:
+      - checkout
+      - run: fastlane scan # Run tests using Fastlane
+      - store_test_results:
+          path: test_output
+      - store_artifacts:
+          path: test_output
+          destination: scan-output
+
   build-and-test:
     macos:
-      xcode: 11.3.0
+      xcode: 12.5.1
     steps:
       - run:
           name: Run tests
