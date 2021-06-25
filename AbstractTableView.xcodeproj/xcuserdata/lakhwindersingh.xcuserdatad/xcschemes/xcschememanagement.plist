@@ -9,11 +9,6 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>AbstractTableViewExample.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +18,11 @@
 			<true/>
 		</dict>
 		<key>FD9AF092267DFF1100C42676</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD9AF0A7267E012B00C42676</key>
 		<dict>
 			<key>primary</key>
 			<true/>

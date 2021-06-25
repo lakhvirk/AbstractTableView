@@ -1,6 +1,0 @@
-framework module AbstractTableView {
-  umbrella header "AbstractTableView-umbrella.h"
-
-  export *
-  module * { export * }
-}

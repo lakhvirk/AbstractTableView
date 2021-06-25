@@ -8,17 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		FD09BED6268045A600C9CAF2 /* AbstractTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD09BED5268045A600C9CAF2 /* AbstractTableViewTests.swift */; };
-		FD0D4F72268008C000659F46 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D4F71268008C000659F46 /* TableViewController.swift */; };
 		FD0D4F752680152C00659F46 /* AbstractTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D4F742680152C00659F46 /* AbstractTableView.swift */; };
 		FD0D4F782680160000659F46 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D4F772680160000659F46 /* UIView.swift */; };
 		FD0D4F7A26801DA400659F46 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD0D4F7926801DA400659F46 /* TableViewDataSource.swift */; };
 		FD9AF094267DFF1100C42676 /* AbstractTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD9AF08A267DFF1100C42676 /* AbstractTableView.framework */; };
 		FD9AF09B267DFF1100C42676 /* AbstractTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = FD9AF08D267DFF1100C42676 /* AbstractTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD9AF0AB267E012B00C42676 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AF0AA267E012B00C42676 /* AppDelegate.swift */; };
-		FD9AF0AF267E012B00C42676 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AF0AE267E012B00C42676 /* ViewController.swift */; };
-		FD9AF0B2267E012B00C42676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9AF0B0267E012B00C42676 /* Main.storyboard */; };
-		FD9AF0B4267E012F00C42676 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD9AF0B3267E012F00C42676 /* Assets.xcassets */; };
-		FD9AF0B7267E012F00C42676 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9AF0B5267E012F00C42676 /* LaunchScreen.storyboard */; };
 		FD9AF0C0267E4C6700C42676 /* AbstractTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AF0BF267E4C6700C42676 /* AbstractTableViewController.swift */; };
 		FD9AF0C9267EB7AF00C42676 /* AbstractTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AF0C8267EB7AF00C42676 /* AbstractTableViewControllerTests.swift */; };
 		FD9AF0CD267FC39C00C42676 /* TableViewDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9AF0CC267FC39C00C42676 /* TableViewDataSourceTests.swift */; };
@@ -36,7 +30,6 @@
 
 /* Begin PBXFileReference section */
 		FD09BED5268045A600C9CAF2 /* AbstractTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTableViewTests.swift; sourceTree = "<group>"; };
-		FD0D4F71268008C000659F46 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		FD0D4F742680152C00659F46 /* AbstractTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTableView.swift; sourceTree = "<group>"; };
 		FD0D4F772680160000659F46 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		FD0D4F7926801DA400659F46 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
@@ -46,13 +39,6 @@
 		FD9AF08E267DFF1100C42676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD9AF093267DFF1100C42676 /* AbstractTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AbstractTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD9AF09A267DFF1100C42676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD9AF0A8267E012B00C42676 /* AbstractTableViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AbstractTableViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD9AF0AA267E012B00C42676 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD9AF0AE267E012B00C42676 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FD9AF0B1267E012B00C42676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FD9AF0B3267E012F00C42676 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FD9AF0B6267E012F00C42676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FD9AF0B8267E012F00C42676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD9AF0BF267E4C6700C42676 /* AbstractTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTableViewController.swift; sourceTree = "<group>"; };
 		FD9AF0C8267EB7AF00C42676 /* AbstractTableViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTableViewControllerTests.swift; sourceTree = "<group>"; };
 		FD9AF0CC267FC39C00C42676 /* TableViewDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSourceTests.swift; sourceTree = "<group>"; };
@@ -71,13 +57,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD9AF094267DFF1100C42676 /* AbstractTableView.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FD9AF0A5267E012B00C42676 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +85,6 @@
 				FD3415AD26818BDD00E5B569 /* README.md */,
 				FD9AF08C267DFF1100C42676 /* AbstractTableView */,
 				FD9AF097267DFF1100C42676 /* AbstractTableViewTests */,
-				FD9AF0A9267E012B00C42676 /* AbstractTableViewExample */,
 				FD9AF08B267DFF1100C42676 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,7 +94,6 @@
 			children = (
 				FD9AF08A267DFF1100C42676 /* AbstractTableView.framework */,
 				FD9AF093267DFF1100C42676 /* AbstractTableViewTests.xctest */,
-				FD9AF0A8267E012B00C42676 /* AbstractTableViewExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,20 +120,6 @@
 				FD9AF09A267DFF1100C42676 /* Info.plist */,
 			);
 			path = AbstractTableViewTests;
-			sourceTree = "<group>";
-		};
-		FD9AF0A9267E012B00C42676 /* AbstractTableViewExample */ = {
-			isa = PBXGroup;
-			children = (
-				FD9AF0AA267E012B00C42676 /* AppDelegate.swift */,
-				FD9AF0AE267E012B00C42676 /* ViewController.swift */,
-				FD0D4F71268008C000659F46 /* TableViewController.swift */,
-				FD9AF0B0267E012B00C42676 /* Main.storyboard */,
-				FD9AF0B3267E012F00C42676 /* Assets.xcassets */,
-				FD9AF0B5267E012F00C42676 /* LaunchScreen.storyboard */,
-				FD9AF0B8267E012F00C42676 /* Info.plist */,
-			);
-			path = AbstractTableViewExample;
 			sourceTree = "<group>";
 		};
 		FD9AF0BC267E08C900C42676 /* Controller */ = {
@@ -225,23 +188,6 @@
 			productReference = FD9AF093267DFF1100C42676 /* AbstractTableViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		FD9AF0A7267E012B00C42676 /* AbstractTableViewExample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FD9AF0B9267E012F00C42676 /* Build configuration list for PBXNativeTarget "AbstractTableViewExample" */;
-			buildPhases = (
-				FD9AF0A4267E012B00C42676 /* Sources */,
-				FD9AF0A5267E012B00C42676 /* Frameworks */,
-				FD9AF0A6267E012B00C42676 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = AbstractTableViewExample;
-			productName = AbstractTableViewExample;
-			productReference = FD9AF0A8267E012B00C42676 /* AbstractTableViewExample.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -256,9 +202,6 @@
 						LastSwiftMigration = 1250;
 					};
 					FD9AF092267DFF1100C42676 = {
-						CreatedOnToolsVersion = 12.5;
-					};
-					FD9AF0A7267E012B00C42676 = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
@@ -278,7 +221,6 @@
 			targets = (
 				FD9AF089267DFF1100C42676 /* AbstractTableView */,
 				FD9AF092267DFF1100C42676 /* AbstractTableViewTests */,
-				FD9AF0A7267E012B00C42676 /* AbstractTableViewExample */,
 			);
 		};
 /* End PBXProject section */
@@ -295,16 +237,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FD9AF0A6267E012B00C42676 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FD9AF0B7267E012F00C42676 /* LaunchScreen.storyboard in Resources */,
-				FD9AF0B4267E012F00C42676 /* Assets.xcassets in Resources */,
-				FD9AF0B2267E012B00C42676 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,16 +264,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD9AF0A4267E012B00C42676 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FD9AF0AF267E012B00C42676 /* ViewController.swift in Sources */,
-				FD9AF0AB267E012B00C42676 /* AppDelegate.swift in Sources */,
-				FD0D4F72268008C000659F46 /* TableViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -351,25 +273,6 @@
 			targetProxy = FD9AF095267DFF1100C42676 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		FD9AF0B0267E012B00C42676 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD9AF0B1267E012B00C42676 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FD9AF0B5267E012F00C42676 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD9AF0B6267E012F00C42676 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FD9AF09C267DFF1100C42676 /* Debug */ = {
@@ -585,46 +488,6 @@
 			};
 			name = Release;
 		};
-		FD9AF0BA267E012F00C42676 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C43Q2K9ZZB;
-				INFOPLIST_FILE = AbstractTableViewExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = lakhwinder.AbstractTableViewExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		FD9AF0BB267E012F00C42676 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C43Q2K9ZZB;
-				INFOPLIST_FILE = AbstractTableViewExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = lakhwinder.AbstractTableViewExample;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -651,15 +514,6 @@
 			buildConfigurations = (
 				FD9AF0A2267DFF1100C42676 /* Debug */,
 				FD9AF0A3267DFF1100C42676 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FD9AF0B9267E012F00C42676 /* Build configuration list for PBXNativeTarget "AbstractTableViewExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FD9AF0BA267E012F00C42676 /* Debug */,
-				FD9AF0BB267E012F00C42676 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
