@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,8 +14,9 @@
 		FDC95CEB26856FF400BC55AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC95CE926856FF400BC55AC /* Main.storyboard */; };
 		FDC95CED26856FF500BC55AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDC95CEC26856FF500BC55AC /* Assets.xcassets */; };
 		FDC95CF026856FF500BC55AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC95CEE26856FF500BC55AC /* LaunchScreen.storyboard */; };
-		FDC95CFB26856FF500BC55AC /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC95CFA26856FF500BC55AC /* ExampleTests.swift */; };
 		FDC95D0626856FF500BC55AC /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC95D0526856FF500BC55AC /* ExampleUITests.swift */; };
+		FDC95D1426858D8600BC55AC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC95D1326858D8600BC55AC /* Constants.swift */; };
+		FDC95D1E2685968C00BC55AC /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC95CFA26856FF500BC55AC /* ExampleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		FDC95D0126856FF500BC55AC /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC95D0526856FF500BC55AC /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
 		FDC95D0726856FF500BC55AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDC95D1326858D8600BC55AC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,6 @@
 				D3C21CF54BF79EE66E2EA2F7 /* Pods-Example.debug.xcconfig */,
 				4AE7FE825FFEB2AD00302A4B /* Pods-Example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,6 +132,7 @@
 				FDC95CEC26856FF500BC55AC /* Assets.xcassets */,
 				FDC95CEE26856FF500BC55AC /* LaunchScreen.storyboard */,
 				FDC95CF126856FF500BC55AC /* Info.plist */,
+				FDC95D1326858D8600BC55AC /* Constants.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -330,6 +332,7 @@
 				FDC95CE826856FF400BC55AC /* ViewController.swift in Sources */,
 				FDC95CE426856FF400BC55AC /* AppDelegate.swift in Sources */,
 				FDC95CE626856FF400BC55AC /* SceneDelegate.swift in Sources */,
+				FDC95D1426858D8600BC55AC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDC95CFB26856FF500BC55AC /* ExampleTests.swift in Sources */,
+				FDC95D1E2685968C00BC55AC /* ExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
